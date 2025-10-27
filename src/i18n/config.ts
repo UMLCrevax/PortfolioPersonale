@@ -14,7 +14,7 @@ const resources = {
         contact: 'Contatti',
       },
       hero: {
-        greeting: 'Ciao, sono',
+        greeting: 'Benvenuta/o, sono',
         title: 'Andrea Crevacore',
         subtitle: 'Sviluppatore Web & PWA Specialist',
         description: 'Appassionato di sviluppo web moderno, Progressive Web Apps, e cloud technologies. Specializzato in React, Angular e sempre alla ricerca di nuove sfide nel mondo DevOps e AWS.',
@@ -29,11 +29,16 @@ const resources = {
         title: 'Esperienza Lavorativa',
         subtitle: 'Il mio percorso professionale',
         present: 'Presente',
+        'full-time': 'Tempo Pieno',
+        'part-time': 'Part-Time',
+        'internship': 'Stage',
+        'contract': 'Contratto',
       },
       education: {
         title: 'Formazione & Certificazioni',
         subtitle: 'Il mio percorso accademico e professionale',
         degree: 'Laurea',
+        diploma: 'Diploma',
         certification: 'Certificazione',
       },
       projects: {
@@ -100,11 +105,16 @@ const resources = {
         title: 'Work Experience',
         subtitle: 'My professional journey',
         present: 'Present',
+        'full-time': 'Full-Time',
+        'part-time': 'Part-Time',
+        'internship': 'Internship',
+        'contract': 'Contract',
       },
       education: {
         title: 'Education & Certifications',
         subtitle: 'My academic and professional path',
         degree: 'Degree',
+        diploma: 'Diploma',
         certification: 'Certification',
       },
       projects: {

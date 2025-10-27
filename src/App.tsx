@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { useEffect } from 'react';
 import { Navigation } from './components/Navigation';
 import { Hero } from './components/Hero';
 import { Skills } from './components/Skills';
@@ -11,7 +12,7 @@ import { AdminPanel } from './components/AdminPanel';
 
 function HomePage() {
   return (
-    <div id="home" className="min-h-screen bg-white">
+    <div id="home" className="min-h-screen bg-white dark:bg-neutral-900">
       <Navigation />
       <Hero />
       <Skills />
@@ -25,6 +26,14 @@ function HomePage() {
 }
 
 function App() {
+  // Initialize theme from localStorage or system preference
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    }
+  }, []);
+
   return (
     <BrowserRouter>
       <Routes>

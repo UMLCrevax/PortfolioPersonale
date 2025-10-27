@@ -31,14 +31,14 @@ export function Projects() {
 
   if (loading) {
     return (
-      <section className="py-20 px-6 bg-neutral-50">
+      <section className="py-20 px-6 bg-neutral-50 dark:bg-neutral-900">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">{t('projects.title')}</h2>
-            <p className="text-neutral-600 text-lg">{t('projects.subtitle')}</p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 dark:text-neutral-50">{t('projects.title')}</h2>
+            <p className="text-neutral-600 dark:text-neutral-400 text-lg">{t('projects.subtitle')}</p>
           </div>
           <div className="flex justify-center">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-neutral-900"></div>
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-neutral-900 dark:border-neutral-50"></div>
           </div>
         </div>
       </section>
@@ -46,11 +46,11 @@ export function Projects() {
   }
 
   return (
-    <section id="projects" className="py-20 px-6 bg-neutral-50">
+    <section id="projects" className="py-20 px-6 bg-neutral-50 dark:bg-neutral-900">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">{t('projects.title')}</h2>
-          <p className="text-neutral-600 text-lg">{t('projects.subtitle')}</p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 dark:text-neutral-50">{t('projects.title')}</h2>
+          <p className="text-neutral-600 dark:text-neutral-400 text-lg">{t('projects.subtitle')}</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -60,7 +60,7 @@ export function Projects() {
             return (
               <div
                 key={project.id}
-                className="group rounded-2xl bg-white overflow-hidden hover:shadow-xl transition-all duration-300 border border-neutral-200 hover:border-neutral-300 transform hover:-translate-y-1"
+                className="group rounded-2xl bg-white dark:bg-neutral-800 overflow-hidden hover:shadow-xl transition-all duration-300 border border-neutral-200 dark:border-neutral-700 hover:border-neutral-300 dark:hover:border-neutral-600 transform hover:-translate-y-1"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 {project.image_url && (
@@ -74,18 +74,18 @@ export function Projects() {
                 )}
 
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-3">{project.title}</h3>
-                  <p className="text-neutral-600 mb-4 leading-relaxed">{description}</p>
+                  <h3 className="text-xl font-bold mb-3 dark:text-neutral-50">{project.title}</h3>
+                  <p className="text-neutral-600 dark:text-neutral-400 mb-4 leading-relaxed">{description}</p>
 
                   <div className="mb-4">
-                    <p className="text-sm font-semibold text-neutral-500 mb-2">
+                    <p className="text-sm font-semibold text-neutral-500 dark:text-neutral-400 mb-2">
                       {t('projects.technologies')}:
                     </p>
                     <div className="flex flex-wrap gap-2">
                       {project.technologies.map((tech) => (
                         <span
                           key={tech}
-                          className="px-3 py-1 text-xs font-medium bg-neutral-100 rounded-full"
+                          className="px-3 py-1 text-xs font-medium bg-neutral-100 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300 rounded-full"
                         >
                           {tech}
                         </span>
@@ -98,7 +98,7 @@ export function Projects() {
                       href={project.live_url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-neutral-900 font-medium hover:gap-3 transition-all duration-200"
+                      className="inline-flex items-center gap-2 text-neutral-900 dark:text-neutral-50 font-medium hover:gap-3 transition-all duration-200"
                     >
                       {t('projects.viewLive')}
                       <ExternalLink size={16} />

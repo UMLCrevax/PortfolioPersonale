@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { LanguageSwitcher } from './LanguageSwitcher';
+import { ThemeToggle } from './ThemeToggle';
 
 export function Navigation() {
   const { t } = useTranslation();
@@ -38,14 +39,14 @@ export function Navigation() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md py-4' : 'bg-transparent py-6'
+        isScrolled ? 'bg-white dark:bg-neutral-900 shadow-md py-4' : 'bg-transparent py-6'
       }`}
     >
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-center justify-between">
           <button
             onClick={() => scrollToSection('#home')}
-            className="text-2xl font-bold"
+            className="text-2xl font-bold text-neutral-900 dark:text-neutral-50"
           >
             AC
           </button>
@@ -55,12 +56,15 @@ export function Navigation() {
               <button
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
-                className="text-neutral-700 hover:text-neutral-900 transition-colors duration-200 font-medium"
+                className="text-neutral-700 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-50 transition-colors duration-200 font-medium"
               >
                 {item.label}
               </button>
             ))}
-            <LanguageSwitcher />
+            <div className="flex items-center gap-4">
+              <ThemeToggle />
+              <LanguageSwitcher />
+            </div>
           </div>
 
           <button
@@ -83,7 +87,8 @@ export function Navigation() {
                 {item.label}
               </button>
             ))}
-            <div className="pt-4">
+            <div className="pt-4 flex items-center gap-4">
+              <ThemeToggle />
               <LanguageSwitcher />
             </div>
           </div>
