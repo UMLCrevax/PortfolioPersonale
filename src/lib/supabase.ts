@@ -58,6 +58,7 @@ export type Project = {
   live_url: string | null;
   image_url: string | null;
   featured: boolean;
+  is_private: boolean;
   order_index: number;
   created_at: string;
   updated_at: string;

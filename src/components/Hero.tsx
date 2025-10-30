@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Download, ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
+import { GridPattern } from './GridPattern';
 
 export function Hero() {
   const { t } = useTranslation();
@@ -15,8 +16,10 @@ export function Hero() {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 py-20 bg-gradient-to-b from-white to-neutral-50 dark:from-neutral-900 dark:to-neutral-800">
-      <div className="max-w-4xl mx-auto text-center">
+    <section className="hero-gradient min-h-screen flex items-center justify-center px-6 py-20">
+      <GridPattern />
+      <div className="absolute inset-0 bg-gradient-to-t from-neutral-100/50 to-transparent dark:from-neutral-900/50"></div>
+      <div className="max-w-4xl mx-auto text-center relative z-10">
         <div className="animate-fade-in">
           <p className="text-neutral-600 dark:text-neutral-400 text-lg mb-2">{t('hero.greeting')}</p>
           <h1 className="text-6xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-neutral-900 to-neutral-600 dark:from-neutral-50 dark:to-neutral-400 bg-clip-text text-transparent">
