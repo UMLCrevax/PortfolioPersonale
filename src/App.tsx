@@ -8,7 +8,7 @@ import { EducationSection } from './components/Education';
 import { Projects } from './components/Projects';
 import { CV } from './components/CV';
 import { Footer } from './components/Footer';
-import { AdminPanel } from './components/AdminPanel';
+// import { AdminPanel } from './components/AdminPanel';
 
 function HomePage() {
   return (
@@ -38,7 +38,7 @@ function App() {
     <BrowserRouter basename="/PortfolioPersonale">
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/admin" element={<AdminPanel />} />
+        {/* <Route path="/admin" element={<AdminPanel />} /> */}
       </Routes>
     </BrowserRouter>
   );
