@@ -16,7 +16,7 @@ export function CV() {
 
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = `/cv/Andrea_Crevacore_CV_${i18n.language}.pdf`;
+    link.href = `./cv/Andrea_Crevacore_CV_${i18n.language}.pdf`;
     link.download = `Andrea_Crevacore_CV_${i18n.language}.pdf`;
     document.body.appendChild(link);
     link.click();
