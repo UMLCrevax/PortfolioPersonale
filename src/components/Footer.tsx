@@ -7,17 +7,17 @@ export function Footer() {
   const socialLinks = [
     {
       icon: Linkedin,
-      href: 'https://www.linkedin.com/in/andrea-crevacore',
+      href: 'https://www.linkedin.com/in/andrea-crevacore-8b686934a',
       label: 'LinkedIn',
     },
     {
       icon: Github,
-      href: 'https://github.com/andreacrevacore',
+      href: 'https://github.com/UMLCrevax',
       label: 'GitHub',
     },
     {
       icon: Mail,
-      href: 'mailto:andrea.crevacore@example.com',
+      href: 'mailto:andreacrevacore@gmail.com',
       label: 'Email',
     },
   ];
