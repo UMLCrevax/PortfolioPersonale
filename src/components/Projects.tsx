@@ -22,7 +22,7 @@ const projects: Project[] = [
     technologies: ['React', 'TypeScript', 'Tailwind CSS', 'i18n'],
     github_url: 'https://github.com/UMLCrevax/PortfolioPersonale',
     live_url: 'https://andreacrevacore.com',
-    image_url: '/images/projects/portfolio-preview.png',
+    image_url: './images/projects/portfolio-preview.png',
     is_private: false
   },
   {
@@ -32,7 +32,7 @@ const projects: Project[] = [
     description_en: 'A web application for selling used motorcycles and social media for motorcyclists. RideRevolution is a Node.js-based application that uses the Express.js framework. It includes features such as authentication with Passport.js, file uploading via Multer, and data management via an SQLite database.',
     technologies: ['HTML', 'Node.js', 'SQLite', 'Express.js','JavaScript','Bootstrap'],
     github_url: 'https://github.com/UMLCrevax/RideRevolution',
-    image_url: '/images/projects/project2-preview.png',
+    image_url: './images/projects/project2-preview.png',
     is_private: false
   },
   {
@@ -42,7 +42,7 @@ const projects: Project[] = [
     description_en: 'Project developed during university internship at an IT company. I created a modular standard PWA as a base for clients and subsequently developed a customized version for a specific client. Due to company confidentiality, specific details cannot be shared.',
     technologies: ['Angular','Ionic', 'Node.js', 'PostgreSQL', 'PWA', 'TypeScript'],
     github_url: '#',
-    image_url: '/images/projects/pwa-preview.png',
+    image_url: './images/projects/pwa-preview.png',
     is_private: true
   }
 ];

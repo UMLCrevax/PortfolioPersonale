@@ -31,7 +31,7 @@ const skillsData: Skill[] = [
     description_en: 'Full-stack development with modern JavaScript, TypeScript and Node.js',
     icon: Code,
     category: 'programming_languages',
-    image: '/images/skills/javascript.png',
+    image: './images/skills/javascript.png',
     technologies: ['JavaScript ES6+', 'TypeScript', 'Node.js', 'Express.js', 'npm/yarn', 'WebSocket']
   },
   {
@@ -41,7 +41,7 @@ const skillsData: Skill[] = [
     description_en: 'Enterprise, desktop and Android application development',
     icon: Code,
     category: 'programming_languages',
-    image: '/images/skills/java.png',
+    image: './images/skills/java.png',
     technologies: ['Java SE', 'Spring Boot', 'JUnit', 'Gradle/Maven', 'JPA/Hibernate', 'Android SDK']
   },
   {
@@ -51,7 +51,7 @@ const skillsData: Skill[] = [
     description_en: 'Desktop applications, systems and game development',
     icon: Terminal,
     category: 'programming_languages',
-    image: '/images/skills/csharp.png',
+    image: './images/skills/csharp.png',
     technologies: ['C#', '.NET Core', 'ASP.NET', 'Entity Framework', 'LINQ', 'WPF/WinForms']
   },
   {
@@ -61,7 +61,7 @@ const skillsData: Skill[] = [
     description_en: 'Backend development, scripting, automation and data science',
     icon: Code,
     category: 'programming_languages',
-    image: '/images/skills/python.png',
+    image: './images/skills/python.png',
     technologies: ['Python 3', 'Django', 'Flask', 'FastAPI', 'Pandas', 'Pytest']
   },
   {
@@ -71,7 +71,7 @@ const skillsData: Skill[] = [
     description_en: 'Data query and manipulation languages',
     icon: Database,
     category: 'programming_languages',
-    image: '/images/skills/database.png',
+    image: './images/skills/database.png',
     technologies: ['SQL', 'PostgreSQL', 'MySQL', 'T-SQL', 'PL/SQL', 'NoSQL']
   },
    {
@@ -81,7 +81,7 @@ const skillsData: Skill[] = [
     description_en: 'RESTful API and server architecture development',
     icon: Server,
     category: 'programming_languages',
-    image: '/images/skills/backend.png',
+    image: './images/skills/backend.png',
     technologies: ['REST API', 'Node.js', 'Express', 'Spring Boot']
   },
   
@@ -93,7 +93,7 @@ const skillsData: Skill[] = [
     description_en: 'Responsive and accessible frontend development with modern CSS frameworks',
     icon: Layout,
     category: 'web_technologies',
-    image: '/images/skills/html-css.png',
+    image: './images/skills/html-css.png',
     technologies: ['HTML5', 'CSS3', 'Tailwind CSS', 'Bootstrap', 'Sass', 'Responsive Design']
   },
   {
@@ -103,7 +103,7 @@ const skillsData: Skill[] = [
     description_en: 'Modern web application development with React and its ecosystem',
     icon: Globe,
     category: 'web_technologies',
-    image: '/images/skills/react.png',
+    image: './images/skills/react.png',
     technologies: ['React', 'Next.js', 'Redux', 'React Query', 'Vite', 'React Router']
   },
   {
@@ -113,7 +113,7 @@ const skillsData: Skill[] = [
     description_en: 'Enterprise web application development with Angular',
     icon: Globe,
     category: 'web_technologies',
-    image: '/images/skills/angular.png',
+    image: './images/skills/angular.png',
     technologies: ['Angular', 'RxJS', 'NgRx', 'Material Design', 'Angular CLI']
   },
  
@@ -127,7 +127,7 @@ const skillsData: Skill[] = [
     description_en: 'Version control and collaboration with Git',
     icon: GitBranch,
     category: 'devops',
-    image: '/images/skills/git.png',
+    image: './images/skills/git.png',
     technologies: ['Git', 'GitHub', 'GitLab']
   },
   {
@@ -137,7 +137,7 @@ const skillsData: Skill[] = [
     description_en: 'Scalable software architecture design',
     icon: Layers,
     category: 'devops',
-    image: '/images/skills/architecture.png',
+    image: './images/skills/architecture.png',
     technologies: ['Microservices', 'REST', 'MVC', 'Clean Architecture']
   }
 ];
