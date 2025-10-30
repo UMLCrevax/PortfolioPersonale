@@ -3,10 +3,13 @@ import { createClient } from '@supabase/supabase-js';
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
 const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
 
-// Create a null client if environment variables are missing (for production builds without Supabase)
-export const supabase = (supabaseUrl && supabaseAnonKey) 
-  ? createClient(supabaseUrl, supabaseAnonKey)
-  : null;
+// Create a null client if environment variables are missing or dummy values
+const isDummyOrMissing = !supabaseUrl || !supabaseAnonKey || 
+  supabaseUrl.includes('dummy') || supabaseAnonKey === 'dummy_key';
+
+export const supabase = isDummyOrMissing 
+  ? null 
+  : createClient(supabaseUrl, supabaseAnonKey);
 
 export type Experience = {
   id: string;
