@@ -56,7 +56,7 @@ export function Hero() {
               <Github size={24} />
               <span className="sr-only">GitHub</span>
             </a>
-            <a href="https://www.linkedin.com/in/andrea-crevacore-8b686934a/" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.linkedin.com/in/andrea-crevacore-8b686934a" target="_blank" rel="noopener noreferrer"
               className="text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-50 transition-colors duration-300">
               <Linkedin size={24} />
               <span className="sr-only">LinkedIn</span>
