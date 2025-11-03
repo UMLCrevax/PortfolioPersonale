@@ -21,7 +21,7 @@ const projects: Project[] = [
     description_en: 'Professional portfolio developed with React, TypeScript and Tailwind CSS. Features dark mode, internationalization and smooth animations.',
     technologies: ['React', 'TypeScript', 'Tailwind CSS', 'i18n'],
     github_url: 'https://github.com/UMLCrevax/PortfolioPersonale',
-    live_url: 'https://andreacrevacore.com',
+    live_url: 'https://umlcrevax.github.io/PortfolioPersonale/',
     image_url: './images/projects/portfolio-preview.png',
     is_private: false
   },
